@@ -23,12 +23,11 @@ Darken = "\033[2m"
 Reset = "\033[0m"
 
 
-st = 0.04
 def s_print(str):
   for letter in str:
     sys.stdout.write(letter)
     sys.stdout.flush()
-    time.sleep(st)
+    time.sleep(0.04)
   print()
 
 def typingInput(text):
